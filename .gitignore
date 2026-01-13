@@ -1,0 +1,73 @@
+# Godot 4+ specific ignores
+.godot/
+
+# Godot-specific ignores
+*.translation
+
+# Imported textures and samples
+.import/
+
+# Build exports
+exports/*
+!exports/.gitkeep
+
+# Mono-specific ignores (if using C#)
+.mono/
+data_*/
+mono_crash.*.json
+
+# System/IDE-specific ignores
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Visual Studio Code
+.vscode/
+*.code-workspace
+
+# JetBrains IDEs
+.idea/
+*.iml
+
+# Vim
+*.swp
+*.swo
+*~
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+
+# Backup files
+*.bak
+*.backup
+
+# Log files
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+
+# Build artifacts
+*.pck
+*.zip
+
+# Platform-specific export templates (large files)
+export_presets.cfg.backup
+
+# Sensitive files
+*.env
+*.env.local
+secrets.json
+credentials.json
+
+# Keep empty directories
+!**/.gitkeep
