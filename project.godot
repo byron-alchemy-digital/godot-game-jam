@@ -11,8 +11,8 @@ config_version=5
 [application]
 
 config/name="Game Jam Project"
-config/description="A game jam project template for Godot 4.x"
-run/main_scene="res://scenes/Main.tscn"
+config/description="A 3D game jam project for Godot 4.x"
+run/main_scene="res://scenes/main/World3D.tscn"
 config/features=PackedStringArray("4.5", "Forward Plus")
 config/icon="res://icon.svg"
 
@@ -24,7 +24,6 @@ GameManager="*res://scripts/GameManager.gd"
 
 window/size/viewport_width=1280
 window/size/viewport_height=720
-window/stretch/mode="canvas_items"
 
 [input]
 
@@ -75,6 +74,13 @@ pause={
 2d_physics/layer_3="environment"
 2d_physics/layer_4="collectibles"
 2d_physics/layer_5="projectiles"
+
+3d_physics/layer_1="player"
+3d_physics/layer_2="enemies"
+3d_physics/layer_3="environment"
+3d_physics/layer_4="interactables"
+3d_physics/layer_5="projectiles"
+3d_physics/layer_6="triggers"
 
 [rendering]
 

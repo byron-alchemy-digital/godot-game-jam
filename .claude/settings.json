@@ -1,0 +1,75 @@
+{
+  "project": {
+    "name": "Godot 3D Game Jam Project",
+    "type": "game",
+    "engine": "godot",
+    "version": "4.5"
+  },
+  "context": {
+    "primaryLanguage": "gdscript",
+    "framework": "godot-4",
+    "paradigm": "object-oriented",
+    "architecture": "component-based"
+  },
+  "conventions": {
+    "namingStyle": {
+      "classes": "PascalCase",
+      "functions": "snake_case",
+      "variables": "snake_case",
+      "constants": "SCREAMING_SNAKE_CASE",
+      "signals": "snake_case_past_tense",
+      "private": "_underscore_prefix"
+    },
+    "documentation": {
+      "required": true,
+      "style": "gdscript-docstrings"
+    },
+    "typeHints": {
+      "required": true,
+      "strict": true
+    }
+  },
+  "paths": {
+    "scripts": "scripts/",
+    "scenes": "scenes/",
+    "assets": "assets/",
+    "resources": "resources/",
+    "autoloads": "scripts/autoload/",
+    "components": "scripts/components/",
+    "entities": "scripts/entities/",
+    "systems": "scripts/systems/"
+  },
+  "godot": {
+    "renderer": "forward_plus",
+    "dimension": "3D",
+    "physicsLayers": {
+      "1": "player",
+      "2": "enemies",
+      "3": "environment",
+      "4": "interactables",
+      "5": "projectiles",
+      "6": "triggers",
+      "7": "navigation",
+      "8": "ragdoll"
+    },
+    "inputActions": [
+      "move_left",
+      "move_right",
+      "move_up",
+      "move_down",
+      "jump",
+      "sprint",
+      "interact",
+      "attack",
+      "pause"
+    ]
+  },
+  "bestPractices": {
+    "preferCompositionOverInheritance": true,
+    "useSignalsForDecoupling": true,
+    "cacheNodeReferences": true,
+    "useStaticTyping": true,
+    "documentPublicAPI": true,
+    "singleResponsibility": true
+  }
+}
