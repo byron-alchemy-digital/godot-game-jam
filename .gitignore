@@ -69,5 +69,8 @@ export_presets.cfg.backup
 secrets.json
 credentials.json
 
+# Claude Code configuration (proprietary prompts/systems)
+.claude/
+
 # Keep empty directories
 !**/.gitkeep
